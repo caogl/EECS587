@@ -1,0 +1,9 @@
+module: Command not found.
+cd /brashear/gcao
+cp /usr/users/1/gcao/caogl/a .
+setenv OMP_NUM_THREADS 64
+omplace -nt 64 ./a
+The runtime is: 11.1257
+The final result is: 5
+
+

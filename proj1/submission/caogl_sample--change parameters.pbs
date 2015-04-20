@@ -1,0 +1,17 @@
+#!/bin/sh
+#PBS -S /bin/sh
+#PBS -N caogl_36_100016
+#PBS -A eecs587f14_flux
+#PBS -l qos=flux
+#PBS -l procs=36,walltime=00:00:01
+#PBS -l pmem=100mb
+#PBS -q flux
+#PBS -M caogl@umich.edu
+#PBS -m abe
+#PBS -j oe
+#PBS -V
+echo "I ran on:"
+cat $PBS_NODEFILE
+# Let PBS handle your output
+cd /home/caogl/privatemodules 
+mpirun -np 36 ./a.bin 1000 > output36-1000_16

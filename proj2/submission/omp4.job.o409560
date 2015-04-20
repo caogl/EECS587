@@ -1,0 +1,9 @@
+module: Command not found.
+cd /brashear/gcao
+cp /usr/users/1/gcao/caogl/a .
+cp: cannot create regular file `./a': Text file busy
+setenv OMP_NUM_THREADS 4
+omplace -nt 4 ./a
+The runtime is: 38.3835
+The final result is: 5
+
